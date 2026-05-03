@@ -1,18 +1,33 @@
 # Owly Books
 
-Owly Books è un'applicazione web sviluppata per incentivare la lettura dei libri attraverso l'integrazione con il servizio esterno Open Library.
+Owly Books è un'applicazione web sviluppata per incentivare la lettura dei libri attraverso l'integrazione con le API di Open Library.
 
-L'applicazione permette all'utente di cercare libri appartenenti a una specifica categoria, ad esempio fantasy, history o science, e di visualizzare le informazioni principali dei risultati ottenuti.
+L'applicazione permette agli utenti di cercare libri per categoria (es. fantasy, history, science) e visualizzare informazioni essenziali come titolo, autori e descrizione completa.
+
+---
+
+## Demo online
+
+https://owly-books.netlify.app
+
+---
+
+## Repository GitHub
+
+https://github.com/marcosaccani1/owly-books
+
+---
 
 ## Funzionalità
 
-- Ricerca di libri per categoria
-- Recupero dei dati tramite API Open Library
-- Visualizzazione del titolo del libro
-- Visualizzazione degli autori
-- Visualizzazione della descrizione completa del libro tramite una seconda chiamata API
-- Gestione dei messaggi di errore
+- Ricerca libri per categoria
+- Integrazione con Open Library API
+- Visualizzazione titolo e autori
+- Visualizzazione descrizione completa tramite seconda chiamata API
+- Gestione errori
 - Interfaccia semplice e intuitiva
+
+---
 
 ## Tecnologie utilizzate
 
@@ -24,18 +39,27 @@ L'applicazione permette all'utente di cercare libri appartenenti a una specifica
 - Vitest
 - Open Library API
 
+---
+
 ## Architettura del progetto
 
-Il progetto utilizza una struttura modulare basata sulla separazione delle responsabilità.
+Il progetto è strutturato secondo il principio di separazione delle responsabilità.
 
-La logica è divisa in più file:
+La logica è suddivisa in moduli:
 
-- `openLibraryService.js`: gestisce le chiamate API verso Open Library
-- `bookRepository.js`: si occupa della trasformazione e normalizzazione dei dati
-- `bookView.js`: gestisce la visualizzazione degli elementi nell'interfaccia
-- `main.js`: collega gli eventi dell'utente con la logica applicativa
+- `openLibraryService.js` → gestione delle chiamate API
+- `bookRepository.js` → trasformazione e normalizzazione dei dati
+- `bookView.js` → gestione dell'interfaccia utente
+- `main.js` → gestione del flusso applicativo
 
-È stato applicato il pattern Service/Repository per separare la logica di accesso ai dati dalla gestione dell'interfaccia utente, rendendo il codice più ordinato, testabile e manutenibile.
+È stato adottato il pattern **Service/Repository**, che consente di:
+
+- separare la logica di accesso ai dati dalla UI  
+- migliorare la manutenibilità  
+- facilitare il testing  
+- rendere il progetto scalabile  
+
+---
 
 ## Struttura del progetto
 
