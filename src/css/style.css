@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+input {
+  padding: 14px;
+  width: 60%;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.book-card {
+  background: white;
+  padding: 26px;
+  margin-top: 24px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+}
+
+.book-card h2 {
+  font-size: 30px;
+}
+
+.book-card p {
+  font-size: 20px;
+}
+
+.desc {
+  margin-top: 18px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owly Books</title>
+  </head>
+
+  <body>
+    <main class="app">
+      <section class="hero">
+        <h1>Owly Books</h1>
+        <p>Cerca libri per categoria</p>
+
+        <form id="search-form" class="search-box">
+          <input
+            id="subject-input"
+            type="text"
+            placeholder="Es. fantasy"
+          />
+          <button type="submit">Cerca</button>
+        </form>
+      </section>
+
+      <section id="results"></section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
